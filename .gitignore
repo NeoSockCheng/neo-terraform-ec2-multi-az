@@ -10,5 +10,3 @@
 # Ignore the .terraform directory where Terraform stores its configuration files
 .terraform/
 
-# Ignore AWS credentials (ensure these are not committed to a repository)
-credentials/
