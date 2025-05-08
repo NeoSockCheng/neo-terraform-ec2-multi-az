@@ -1,6 +1,6 @@
 # Terraform EC2 Multi-AZ Deployment
 
-This repository provisions EC2 instances in multiple availability zones (AZs) in AWS using Terraform. The EC2 instances will be distributed across different AZs for better availability and fault tolerance.
+This project sets up EC2 instances across multiple Availability Zones (AZs) in AWS using Terraform. By spreading the instances across different AZs, it helps improve the availability and fault tolerance of the infrastructure.
 
 ## Prerequisites
 
@@ -13,8 +13,6 @@ This repository provisions EC2 instances in multiple availability zones (AZs) in
 1. Clone the repository:
    ```bash
    git clone https://github.com/NeoSockCheng/neo-terraform-ec2-multi-az.git
-   cd terraform-ec2-multi-az
-
 
 2. Navigate to dev environment folder
     ```bash
@@ -27,6 +25,7 @@ This repository provisions EC2 instances in multiple availability zones (AZs) in
     terraform apply
 
 ## Folder Structure
+This project is organized in a modular way, which allows for easy maintenance and scalability:
 
 - **`envs/`**: Contains environment-specific configurations.
   - **`dev/`**: Development environment with `terraform.tfvars` for variable values.
@@ -40,3 +39,9 @@ This repository provisions EC2 instances in multiple availability zones (AZs) in
 
 - **`.gitignore`**: Ignores sensitive files and Terraform state files from being tracked by Git.
 - **`README.md`**: This file, which provides documentation on the project structure and usage.
+
+## Key Features
+- This project sets up EC2 instances in different Availability Zones (AZ), which helps improve the reliability and availability of the infrastructure.
+- The Terraform configurations are broken into modules, making it easier to reuse components in future projects without needing to rewrite code.
+- .tfvars files is used to manage different settings for different environments (like dev, staging, or production), which helps keep things organized and easy to change.
+- Implements an organized folder structure for easy management of cloud resources.
